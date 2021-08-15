@@ -1,0 +1,9 @@
+body {
+    background:rgb(21, 22, 29);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font: 300% verdana;
+    text-align: center;
+}
