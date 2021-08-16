@@ -1,0 +1,15 @@
+body {
+    background:rgb(21, 22, 29);
+}
+
+header {
+    color: snow;
+    font: 200% verdana;
+    text-align: center;
+}
+
+footer {
+    color: snow;
+    font: 100% verdana;
+    text-align: center;
+}
