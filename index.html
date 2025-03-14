@@ -1,1 +1,282 @@
-on dev
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Asegúrate de guardar el archivo en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio profesional de Gian Glen López Pintos, estudiante de Ingeniería Robótica y desarrollador de software con experiencia en ventas, atención al cliente y proyectos colaborativos.">
+  <meta name="keywords" content="Gian Glen López Pintos, Ingeniería Robótica, desarrollador de software, portfolio, programación">
+  <meta name="author" content="Gian Glen López Pintos">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Gian Glen López Pintos - Portfolio">
+  <meta property="og:description" content="Portfolio profesional de Gian Glen López Pintos, estudiante de Ingeniería Robótica y desarrollador de software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://netgian.github.io/">
+  <!-- <meta property="og:image" content="https://tu-dominio.com/hero-bg-dark.jpg"> -->
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gian Glen López Pintos - Portfolio">
+  <meta name="twitter:description" content="Portfolio profesional de Gian Glen López Pintos, estudiante de Ingeniería Robótica y desarrollador de software.">
+  <!-- <meta name="twitter:image" content="https://tu-dominio.com/hero-bg-dark.jpg"> -->
+  
+  <title>Gian Glen López Pintos - Portfolio</title>
+  
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    a {
+      color: #0099ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    /* Header / Hero */
+    .hero {
+      background: url('hero-bg-dark.jpg') no-repeat center center/cover;
+      height: 30vh; /* Header compacto */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    /* Secciones */
+    .section {
+      padding: 40px 0;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #cccccc;
+    }
+    /* Acerca de mí */
+    #acerca-de p {
+      max-width: 800px;
+      margin: 10px auto;
+      text-align: justify;
+    }
+    /* Sección combinada: Habilidades y Certificados */
+    .two-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2%;
+    }
+    .column {
+      flex: 0 0 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centrado en la columna */
+    }
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #cccccc;
+      text-align: center;
+    }
+    /* Habilidades */
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+    }
+    .skills-list li {
+      background: #1e1e1e;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-align: center;
+    }
+    .skills-list li:hover {
+      transform: translateY(-5px);
+      background-color: #333333;
+    }
+    /* Certificados */
+    .certs-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .certs-list li {
+      background: #1e1e1e;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-left: 5px solid #0099ff;
+      border-radius: 3px;
+      font-size: 1rem;
+      text-align: left;
+    }
+    /* Contacto */
+    #contacto p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    /* Footer */
+    .footer {
+      background: #1e1e1e;
+      color: #b0b0b0;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .footer p {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+    .social-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    .social-links li {
+      margin: 0 10px;
+    }
+    .social-links a {
+      color: #0099ff;
+      font-size: 1rem;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .two-columns {
+        flex-direction: column;
+      }
+      .column {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Gian Glen López Pintos</h1>
+      <p>Estudiante de Ingeniería Robótica | Desarrollador de Software</p>
+    </div>
+  </header>
+
+  <!-- Acerca de mí -->
+  <section id="acerca-de" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Acerca de mí</h2>
+      <p>
+        Soy un joven universitario de 19 años en busca de oportunidades laborales. Me adapto rápidamente a cualquier situación y cuento con experiencia en ventas, atención al cliente y desarrollo tecnológico. Llevo más de 4 años en el mundo del desarrollo de software, dominando lenguajes como C, C++, Python, Java, C# y bases de datos.
+      </p>
+      <p>
+        Estudio Ingeniería Robótica en la Universidad de Alicante y tengo intenciones de trasladarme a la Carlos III de Madrid. Además, soy bilingüe (inglés como segunda lengua). Me considero capaz de trabajar de forma autónoma y gestionar múltiples proyectos simultáneamente, contribuyendo a la mejora continua de procesos y optimizando la eficiencia y calidad. Participo activamente en proyectos colaborativos, destacando mis habilidades de trabajo en equipo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección combinada: Habilidades y Certificados -->
+  <section id="habilidades-certificados" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Habilidades y Certificados</h2>
+      <div class="two-columns">
+        <!-- Columna de Habilidades -->
+        <div class="column">
+          <h3>Habilidades</h3>
+          <ul class="skills-list">
+            <li>Programación en C / C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>JavaScript / Node.js</li>
+            <li>Git</li>
+            <li>Bases de datos</li>
+            <li>Formación autodidacta</li>
+            <li>Inglés (bilingüe)</li>
+            <li>Gestión de proyectos de software</li>
+          </ul>
+        </div>
+        <!-- Columna de Certificados -->
+        <div class="column">
+          <h3>Certificados</h3>
+          <ul class="certs-list">
+            <li>Certificado de Programación en Java - 
+              <a href="https://www.formacarm.es/" target="_blank">Formacarm</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>
+        ¿Te interesa colaborar o conocer más sobre mi trabajo? Puedes contactarme al correo: 
+        <a href="mailto:gianlopez.cv@gmail.com">gianlopez.cv@gmail.com</a> o visitar mi GitHub: 
+        <a href="https://github.com/netgian" target="_blank">github.com/netgian</a>.<br><br>
+        Si deseas ver mi currículum, haz clic 
+        <a href="curriculum.pdf" target="_blank">aquí</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Gian Glen López Pintos - Alicante, España</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/netgian" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gianglen/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // Duración de la animación en milisegundos
+      once: true     // La animación solo se ejecuta una vez
+    });
+  </script>
+
+</body>
+</html>
