@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"> <!-- Make sure to save the file in UTF-8 -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Professional portfolio of Gian Glen López Pintos, Robotics Engineering student and software developer with experience in sales, customer service, and collaborative projects.">
   <meta name="keywords" content="Gian Glen López Pintos, Robotics Engineering, software developer, portfolio, programming">
@@ -21,6 +21,16 @@
   <!-- <meta name="twitter:image" content="https://your-domain.com/hero-bg-dark.jpg"> -->
   
   <title>Gian Glen López Pintos - Portfolio</title>
+
+  <!-- PWA: Android & iOS -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#121212">
+
+  <!-- iOS support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Gian Glen López">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
   
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -281,5 +291,13 @@
     });
   </script>
 
+  <!-- Registro del Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('SW registrado'))
+      .catch(err => console.error('Error al registrar SW:', err));
+    }
+  </script>
 </body>
 </html>
